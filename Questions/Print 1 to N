@@ -1,1 +1,18 @@
+public class PrintNumbers {
+
+    // Recursive method to print numbers from 1 to n
+    public static void printNumbers(int current, int n) {
+        if (current > n) {
+            return; // Base case: stop when current exceeds n
+        }
+        System.out.println(current); // Print the current number
+        printNumbers(current + 1, n); // Recursive call with incremented current
+    }
+
+    public static void main(String[] args) {
+        int n = 10; // Replace with any positive integer
+        System.out.println("Printing numbers from 1 to " + n + ":");
+        printNumbers(1, n); // Start the recursion from 1
+    }
+}
 
